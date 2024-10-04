@@ -1,0 +1,206 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap');
+:root  {
+    --cor-principal: #000000;
+    --cor-secundaria:#f6f6f6;
+    --cor-terciaria: #22D4FD;
+    --fonte-primaria: "Montserrat", sans-serif;
+    --fonte-secundaria: "Krona One", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.cabecalho {
+    padding: 2% 0 0 15%;
+}
+.cabecalho__menu {
+    display: flex;
+    gap: 5rem;
+}
+.cabecalho__links{
+    color: var(--cor-terciaria);
+    font-family:var(--fonte-primaria);
+    font-size: 1.5rem; 
+    text-decoration: none;
+}
+
+.body {
+    background-color:var(--cor-principal);
+    color: var(--cor-secundaria);
+    height: 100vh; 
+    box-sizing: border-box;
+    align-content: center;
+  
+}
+.title {
+    color:var(--cor-terciaria); 
+}
+.corpe  { 
+    color: rgb(0, 255, 106);
+}
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.apresentacao__conteudo {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   gap:2.5rem;
+   text-align: justify;
+}
+.title__size {
+    font-size: 2.25rem;
+    font-family: "Krona One", sans-serif;
+    width: 37.5rem;
+    
+}
+.corpe__size {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.redes {
+    font-family: "Krona One", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.botoes {
+display: flex;
+justify-content: space-between;
+gap: 2rem;
+flex-direction:column;
+align-items: center;
+
+}
+.links {
+     /* background-color: #22D4FD; */
+    display: flex;
+    border: 0.125rem solid var(--cor-terciaria);
+    text-align: center;
+    width: 23.8rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1.34rem 0px;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.links:hover {
+    background-color: #272727;
+    padding: 3%;
+}
+
+.image {
+    border-radius: 15px;
+    width: 50%;
+    margin: 5% 3% 0 10% ;
+}
+    
+.rodape {
+    color: #000000;
+    background-color: var(--cor-terciaria);
+    padding: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+/* Pagina sobre mim */
+
+.sobre__mim__main {
+    padding: 5% 15%;
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;    
+}
+.sobre__mim__main__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 50%;
+}
+
+.sobre__mim__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.2rem;
+    color: var(--cor-secundaria)
+}
+
+.mim {
+    color:var(--cor-terciaria);
+    font-style: italic;
+}
+
+.sobre__mim__corpo {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: justify;
+
+}
+.lista {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    padding: 0 0 0 3%;
+    
+}
+.para__saber_mais { 
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+}
+ .link__curriculo {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: var(--cor-secundaria)
+ }
+
+ .link__curriculo__strong {
+    color:var(--cor-terciaria);
+ }
+
+ /* formato em outras resolucoes */
+
+ @media (max-width:1200px) { 
+    .cabecalho {
+    padding: 10%;
+    }
+    .cabecalho__menu {
+       justify-content: center;
+    }
+    .apresentacao{ 
+    flex-direction: column;
+    padding: 5%;
+    .apresentacao__conteudo {
+    order: 2;      
+    }
+    .apresentacao__conteudo {
+        padding: auto;
+    }
+    .image { 
+    order: 1;
+    }}
+    .sobre__mim__main {
+        flex-direction: column;
+        padding: 5%;
+        .image{
+            order: 1;
+        }
+        .sobre__mim__main__conteudo {
+            padding: auto;
+            order: 2;
+        }
+    }
+}
